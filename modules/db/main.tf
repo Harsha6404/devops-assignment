@@ -6,8 +6,8 @@ resource "aws_db_subnet_group" "default" {
 resource "aws_db_instance" "this" {
   allocated_storage    = 20
   storage_type         = "gp2"
-  engine               = "mysql"
-  engine_version       = "8.0.41"
+  engine               = "postgres"
+  engine_version       = "16.4"
   instance_class       = var.instance_class
   db_name              = var.db_name
   username             = var.db_username
